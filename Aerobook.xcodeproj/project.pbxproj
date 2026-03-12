@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB70F4752F51E78000ABFB75 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB70F4722F51E5B900ABFB75 /* libsqlite3.tbd */; };
+		FB8AEC6A2F547BE3002C3477 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8AEC692F547BD1002C3477 /* libz.1.1.3.tbd */; };
+		FB8AED922F565CDB002C3477 /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = FB8AED912F565CDB002C3477 /* CoreXLSX */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FB70F4292F51E55600ABFB75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +33,27 @@
 		FB70F41B2F51E55400ABFB75 /* Aerobook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aerobook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB70F4282F51E55600ABFB75 /* AerobookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerobookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB70F4322F51E55700ABFB75 /* AerobookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerobookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB70F4722F51E5B900ABFB75 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FB70F4762F51E78D00ABFB75 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FB8AEC692F547BD1002C3477 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FB70F4742F51E5DA00ABFB75 /* Exceptions for "Aerobook" folder in "Aerobook" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FB70F41A2F51E55400ABFB75 /* Aerobook */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FB70F41D2F51E55400ABFB75 /* Aerobook */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FB70F4742F51E5DA00ABFB75 /* Exceptions for "Aerobook" folder in "Aerobook" target */,
+			);
 			path = Aerobook;
 			sourceTree = "<group>";
 		};
@@ -52,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8AED922F565CDB002C3477 /* CoreXLSX in Frameworks */,
+				FB8AEC6A2F547BE3002C3477 /* libz.1.1.3.tbd in Frameworks */,
+				FB70F4752F51E78000ABFB75 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +103,7 @@
 				FB70F41D2F51E55400ABFB75 /* Aerobook */,
 				FB70F42B2F51E55600ABFB75 /* AerobookTests */,
 				FB70F4352F51E55700ABFB75 /* AerobookUITests */,
+				FB70F4712F51E5B800ABFB75 /* Frameworks */,
 				FB70F41C2F51E55400ABFB75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +116,16 @@
 				FB70F4322F51E55700ABFB75 /* AerobookUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FB70F4712F51E5B800ABFB75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB8AEC692F547BD1002C3477 /* libz.1.1.3.tbd */,
+				FB70F4762F51E78D00ABFB75 /* libsqlite3.0.tbd */,
+				FB70F4722F51E5B900ABFB75 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +148,7 @@
 			);
 			name = Aerobook;
 			packageProductDependencies = (
+				FB8AED912F565CDB002C3477 /* CoreXLSX */,
 			);
 			productName = Aerobook;
 			productReference = FB70F41B2F51E55400ABFB75 /* Aerobook.app */;
@@ -175,6 +212,7 @@
 				TargetAttributes = {
 					FB70F41A2F51E55400ABFB75 = {
 						CreatedOnToolsVersion = 26.3;
+						LastSwiftMigration = 2630;
 					};
 					FB70F4272F51E55600ABFB75 = {
 						CreatedOnToolsVersion = 26.3;
@@ -195,6 +233,9 @@
 			);
 			mainGroup = FB70F4122F51E55400ABFB75;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FB8AED902F565CDB002C3477 /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB70F41C2F51E55400ABFB75 /* Products */;
 			projectDirPath = "";
@@ -395,16 +436,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NSL55R2KGH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aerobook/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AeroBook needs camera access to scan your paper logbook.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "AeroBook needs access to save scanned logbook pages.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,9 +459,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitulpatankar.Aerobook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Aerobook/Aerobook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,16 +478,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NSL55R2KGH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aerobook/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "AeroBook needs camera access to scan your paper logbook.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "AeroBook needs access to save scanned logbook pages.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,9 +501,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitulpatankar.Aerobook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Aerobook/Aerobook-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,6 +527,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitulpatankar.AerobookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -489,6 +552,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitulpatankar.AerobookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -509,6 +575,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitulpatankar.AerobookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -529,6 +598,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitulpatankar.AerobookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -578,6 +650,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB8AED902F565CDB002C3477 /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB8AED912F565CDB002C3477 /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB8AED902F565CDB002C3477 /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB70F4132F51E55400ABFB75 /* Project object */;
 }
